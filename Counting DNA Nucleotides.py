@@ -14,9 +14,10 @@ Return: Four integers (separated by spaces) counting the respective number of ti
 #20 12 17 21
 
 def main():
-    # get used input
+    # get user input
     s=input('Enter DNA strand: ')
-    total=[0,0,0,0]
+    total=[0,0,0,0] # pre-alocate space to count
+    # Loop through and count
     for i in s:
         if i=='A':
             total[0]=total[0]+1
@@ -30,3 +31,8 @@ def main():
 
 
 main()
+
+# ALt approach:
+'''AN alternative apporach would be to use recursion but does not provide any addtional benefits'''
+
+# Has runtime complexity of O(N)
