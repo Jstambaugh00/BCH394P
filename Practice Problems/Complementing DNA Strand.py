@@ -26,6 +26,9 @@ def main():
 
     # Reverse
     cstrand=cstrand[::-1]
+    # Save to file
+    f = open("ans.txt", "w")
+    f.write(cstrand)
     print(cstrand)
 main()
 
